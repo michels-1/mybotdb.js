@@ -1,8 +1,42 @@
 const { cmd } = require('../command')
 const { fetchJson } = require('../lib/functions')
+const { igdl } = require('ruhend-scraper')
 
 
 
+cmd({
+
+    pattern: "ig",
+    desc: "To get the instragram.",
+    react: "📑",
+    use: '.ig < Link >',
+    category: "download",
+    filename: __filename
+
+},
+
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+
+try{
+    
+if (!q) return m.reply(`Please Give Me a vaild Link...`);
+m.react('⬇️')
+
+         let res = await igdl(q);
+        
+         let data = await res.data;
+         for (let i = 0; i < 20; i++) {
+            let media = data[i];
+            let downloadurl = media.url
+             m.react('⬆️')
+            await conn.sendMessage(from,{video: {url:downloadurl},mimetype:"video/mp4",caption: config.FOOTER},{quoted:mek})
+             m.react('✅')
+         }
+
+}catch(e){
+console.log(e)
+}
+})
 
 cmd({
     pattern: "fb",
