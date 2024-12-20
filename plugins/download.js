@@ -37,6 +37,7 @@ console.log(e)
 cmd({
 
     pattern: "ig",
+    alias: ["insta","igdl"],
     desc: "To get the instragram.",
     react: "📑",
     use: '.ig < Link >',
