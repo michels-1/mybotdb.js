@@ -4,7 +4,7 @@ const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, 
 
 
 cmd({
-    pattern: "movie",
+    pattern: "imdb",
     desc: "Fetch detailed information about a movie.",
     category: "other",
     react: "🎬",
