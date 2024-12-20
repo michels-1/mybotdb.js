@@ -65,7 +65,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         // Send the movie information along with the poster image
         await conn.sendMessage(from, {
             image: { url: imageUrl },
-            caption: `${movieInfo}\n> *POWERED by ASITHA-MD*`
+            caption: `${movieInfo}\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀɴɪʟᴀ ʟᴏᴄʜᴀɴᴀ*`
         }, { quoted: mek });
     } catch (e) {
         console.log(e);
@@ -85,7 +85,7 @@ cmd({
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, mentionByTag, db_pool, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isCreator ,isDev, isAdmins, reply}) => {
 try{
 
-if ( !m.quoted ) return reply('*.upmv jid & Halo (2024) TV Series E3*')
+if ( !m.quoted ) return reply('*.ᴜᴘᴍᴇ ᴊɪᴅ & ᴍᴏᴠɪᴇ ɪɴꜰᴏ*')
 const data = q.split(" | ")[0] 
 const datas = q.split(" | ")[1] 
 const datase = q.split(" ¥ ")[1]
@@ -108,13 +108,13 @@ cmd({
 async(conn, mek, m,{from, l, quoted, chat, body, isCmd, command, mentionByTag, db_pool, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isCreator ,isDev, isAdmins, reply}) => {
 try{
 
-if ( !m.quoted ) return reply('*ℹ .upmv jid & Halo (2024) TV Series E3*')
+if ( !m.quoted ) return reply('*.ᴜᴘᴍᴠ ᴊɪᴅ & ᴍᴏᴠɪᴇ ɪɴꜰᴏ*')
 if ( !q ) return 
 const data = q.split(" & ")[0] 
 const datas = q.split(" & ")[1] 
       
 
- await conn.sendMessage(data, { document : { url : m.quoted.msg  } ,caption: `\n${datas}\n\n> *🎬 VAJIRA-MD 🎬*`  ,mimetype: "video/mp4" , fileName: `🎬 MOVIE DOWNLOADER 🎬\n${datas}.mp4` } )
+ await conn.sendMessage(data, { document : { url : m.quoted.msg  } ,caption: `\n${datas}\n\n> *🎬 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀɴɪʟᴀ ʟᴏᴄʜᴀɴᴀ 🎬*`  ,mimetype: "video/mp4" , fileName: `🎬 ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ 🎬\n${datas}.mp4` } )
 		} catch (e) {
 reply('❗ Error' + e )
 l(e)
@@ -134,13 +134,13 @@ cmd({
 async(conn, mek, m,{from, l, quoted, chat, body, isCmd, command, mentionByTag, db_pool, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isCreator ,isDev, isAdmins, reply}) => {
 try{
 
-if ( !m.quoted ) return reply('*ℹ .mkv jid & Halo (2024) TV Series E3*')
+if ( !m.quoted ) return reply('*.ᴍᴋᴠ ᴊɪᴅ & ᴍᴏᴠɪᴇ ɪɴꜰᴏ*')
 if ( !q ) return 
 const data = q.split(" & ")[0] 
 const datas = q.split(" & ")[1] 
       
 
- await conn.sendMessage(data, { document : { url : m.quoted.msg  } ,caption: `\n${datas}\n\n> *🎬 VAJIRA-MD 🎬*`  ,mimetype: "video/mkv" , fileName: `🎬 MOVIE DOWNLOADER 🎬\n${datas}.mkv` } )
+ await conn.sendMessage(data, { document : { url : m.quoted.msg  } ,caption: `\n${datas}\n\n> *🎬 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀɴɪʟᴀ ʟᴏᴄʜᴀɴᴀ 🎬*`  ,mimetype: "video/mkv" , fileName: `🎬 ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ 🎬\n${datas}.mkv` } )
 		} catch (e) {
 reply('❗ Error' + e )
 l(e)
@@ -159,11 +159,11 @@ cmd({
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, mentionByTag, db_pool, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isCreator ,isDev, isAdmins, reply}) => {
 try{
 
-if ( !m.quoted ) return reply('*ℹ .upmv jid & Halo (2024) TV Series E3*')
+if ( !m.quoted ) return reply('*.ᴜᴘᴛᴠ ᴊɪᴅ & ᴍᴏᴠɪᴇ ɪɴꜰᴏ*')
 if ( !q ) return 
 const data = q.split(" & ")[0] 
 const datas = q.split(" & ")[1] 
- await conn.sendMessage(data, { document : { url : m.quoted.msg  } ,caption: `*${datas}*`  ,mimetype: "video/mp4" , fileName: `📺 TECHNICAL CYBERS 📺\n${datas}.mp4` } )
+ await conn.sendMessage(data, { document : { url : m.quoted.msg  } ,caption: `*${datas}*`  ,mimetype: "video/mp4" , fileName: `📺 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀɴɪʟᴀ ʟᴏᴄʜᴀɴᴀ 📺\n${datas}.mp4` } )
 		} catch (e) {
 reply('❗ Error' + e )
 l(e)
@@ -182,11 +182,11 @@ cmd({
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, mentionByTag, db_pool, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isCreator ,isDev, isAdmins, reply}) => {
 try{
 
-if ( !m.quoted ) return reply('*ℹ .upmv jid & Halo (2024) TV Series E3*')
+if ( !m.quoted ) return reply('*.ᴜᴘᴛᴠᴍ ᴊɪᴅ & ᴍᴏᴠɪᴇ ɪɴꜰᴏ*')
 if ( !q ) return 
 const data = q.split(" & ")[0] 
 const datas = q.split(" & ")[1] 
- await conn.sendMessage(data, { document : { url : m.quoted.msg  } ,caption: `*${datas}*`  ,mimetype: "video/mkv" , fileName: `📺 TECHNICAL CYBERS 📺\n${datas}.mkv` } )
+ await conn.sendMessage(data, { document : { url : m.quoted.msg  } ,caption: `*${datas}*`  ,mimetype: "video/mkv" , fileName: `ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ\n${datas}.mkv` } )
 		} catch (e) {
 reply('❗ Error' + e )
 l(e)
@@ -205,11 +205,11 @@ cmd({
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, mentionByTag, db_pool, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isCreator ,isDev, isAdmins, reply}) => {
 try{
 
-if ( !m.quoted ) return reply('*ℹ .upmv jid & Halo (2024) TV Series E3*')
+if ( !m.quoted ) return reply('*.ᴜᴘᴍᴠᴍ ᴊɪᴅ & ᴍᴏᴠɪᴇ ɪɴꜰᴏ*')
 if ( !q ) return 
 const data = q.split(" & ")[0] 
 const datas = q.split(" & ")[1] 
- await conn.sendMessage(data, { document : { url : m.quoted.msg  } ,caption: `\n${datas}\n\n> *TECHNICAL CYBERS*`  ,mimetype: "video/mkv" , fileName: `🎬 VAJIRA-MD 🎬\n${datas}.mkv` } )
+ await conn.sendMessage(data, { document : { url : m.quoted.msg  } ,caption: `\n${datas}\n\n> *ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*`  ,mimetype: "video/mkv" , fileName: `🎬 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀɴɪʟᴀ ʟᴏᴄʜᴀɴᴀ 🎬\n${datas}.mkv` } )
 		} catch (e) {
 reply('❗ Error' + e )
 l(e)
@@ -228,11 +228,11 @@ cmd({
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, mentionByTag, db_pool, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isCreator ,isDev, isAdmins, reply}) => {
 try{
 
-if ( !m.quoted ) return reply('*ℹ .upmv jid & Halo (2024) TV Series E3*')
+if ( !m.quoted ) return reply('*.ᴜᴘᴢɪᴘ ᴊɪᴅ & ᴍᴏᴠɪᴇ ɪɴꜰᴏ*')
 if ( !q ) return 
 const data = q.split(" & ")[0] 
 const datas = q.split(" & ")[1] 
- await conn.sendMessage(data, { document : { url : m.quoted.msg  } ,caption: `\n${datas}\n\n> *VAJIRATECH*`  ,mimetype: "application/zip" , fileName: `🎬 TECHNICAL CYBERS 🎬\n${datas}.zip` } )
+ await conn.sendMessage(data, { document : { url : m.quoted.msg  } ,caption: `\n${datas}\n\n> *ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*`  ,mimetype: "application/zip" , fileName: `🎬 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀɴɪʟᴀ ʟᴏᴄʜᴀɴᴀ 🎬\n${datas}.zip` } )
 		} catch (e) {
 reply('❗ Error' + e )
 l(e)
@@ -251,11 +251,11 @@ cmd({
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, mentionByTag, db_pool, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isCreator ,isDev, isAdmins, reply}) => {
 try{
 
-if ( !m.quoted ) return reply('*ℹ .upmv jid & Halo (2024) TV Series E3*')
+if ( !m.quoted ) return reply('*.ᴜᴘᴢɪᴘɴ ᴊɪᴅ & ᴍᴏᴠɪᴇ ɪɴꜰᴏ*')
 if ( !q ) return 
 const data = q.split(" & ")[0] 
 const datas = q.split(" & ")[1] 
- await conn.sendMessage(data, { document : { url : m.quoted.msg  } ,caption: `*${datas}*`  ,mimetype: "application/zip" , fileName: `📃 TECHNICAL CYBERS 📃\n${datas}.zip` } )
+ await conn.sendMessage(data, { document : { url : m.quoted.msg  } ,caption: `*${datas}*`  ,mimetype: "application/zip" , fileName: `📃 ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ 📃\n${datas}.zip` } )
 		} catch (e) {
 reply('❗ Error' + e )
 l(e)
@@ -274,7 +274,7 @@ cmd({
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, mentionByTag, db_pool, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isCreator ,isDev, isAdmins, reply}) => {
 try{
 
-if ( !m.quoted ) return reply('*ℹ .upmv jid & Halo (2024) TV Series E3*')
+if ( !m.quoted ) return reply('*.ᴜᴘᴢɪᴘꜰɪʟᴇ ᴊɪᴅ & ᴍᴏᴠɪᴇ ɪɴꜰᴏ*')
 if ( !q ) return 
 const data = q.split(" & ")[0] 
 const datas = q.split(" & ")[1] 
