@@ -25,8 +25,7 @@
     "yt-search":"2.12.1",
     "api-dylux":"1.8.5",
     "mongoose":"8.5.3",
-    "wa-sticker-formatter": "^4.3.2"
-    "node-fetch": "^2.6.1",
+    "wa-sticker-formatter": "^4.3.2",
     "google-tts-api":"2.0.2",
     "ruhend-scraper": "latest"
     
