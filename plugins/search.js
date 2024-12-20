@@ -1,7 +1,6 @@
 const { cmd } = require('../command');
 const axios = require('axios');
 const { Buffer } = require('buffer');
-const crypto = require('crypto');
 const emailDataStore = {};
 const cheerio = require("cheerio");
 const fetch = require('node-fetch');
@@ -13,7 +12,7 @@ cmd({
     pattern: "img",
     desc: "Search and send images from Google.",
     react: "🖼️",
-    category: "download",
+    category: "search",
     filename: __filename
 },
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -63,7 +62,7 @@ cmd({
     desc: "Create temporary email address and use it as needed.",
     react: "📧",
     use: ".tempmail",
-    category: "tools",
+    category: "search",
     filename: __filename
 },
 async (conn, mek, m, { from, sender, reply }) => {
@@ -95,7 +94,7 @@ cmd({
     desc: "Check mails in your temporary email address.",
     react: "📧",
     use: ".checkmail",
-    category: "tools",
+    category: "search",
     filename: __filename
 },
 async (conn, mek, m, { from, sender, reply }) => {
@@ -129,7 +128,7 @@ cmd({
     desc: "Delete temporary email address.",
     react: "❌",
     use: ".delmail",
-    category: "tools",
+    category: "search",
     filename: __filename
 },
 async (conn, mek, m, { from, sender, reply }) => {
