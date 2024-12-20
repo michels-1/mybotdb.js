@@ -1,8 +1,38 @@
 const { cmd } = require('../command')
 const { fetchJson } = require('../lib/functions')
 const { igdl } = require('ruhend-scraper')
+const fetch = require('node-fetch')
+var needus = "🚩*Please Give Me GitHub Repo URL!*" 
+var cantf = "🚩 *I Can't Find This Repo!*" 
 
-
+cmd({
+    pattern: "gitclone",
+    alias: ["gitdl"],
+    react: '💫',
+    desc: "Download git repos",
+    category: "download",
+    use: '.gitclone <repo link>',
+    filename: __filename
+},
+async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+try{
+      if (!q) return await  reply(needus)
+      let regex1 = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
+      let linknya = q
+      if (!regex1.test(linknya)) return reply("🚩*Please Give Me Valid GitHub Repo Link!*");
+      let [, user, repo] = q.match(regex1) || []
+      repo = repo.replace(/.git$/, '')
+      let url = `https://api.github.com/repos/${user}/${repo}/zipball`
+      let filename = (await fetch(url, {
+         method: 'HEAD'
+      })).headers.get('content-disposition').match(/attachment; filename=(.*)/)[1]
+      let wm = `> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀɴɪʟᴀ ʟᴏᴄʜᴀɴᴀ*`
+      await conn.sendMessage(from, { document: { url: url }, mimetype: 'application/zip', fileName: filename, caption: wm}, { quoted: mek })
+} catch (e) {
+reply(cantf)
+console.log(e)
+}
+})
 
 cmd({
 
