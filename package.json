@@ -27,7 +27,8 @@
     "mongoose":"8.5.3",
     "wa-sticker-formatter": "^4.3.2",
     "google-tts-api":"2.0.2",
-    "ruhend-scraper": "latest"
-    
+    "ruhend-scraper": "latest",
+    "@sl-code-lords/movie-api": "1.0.0",
+    "pixaldrain-sinhalasub": "https://github.com/DarkMakerofc/pixaldrain-sinhalasub"
 }
 }
